@@ -54,6 +54,10 @@ $ vendor/bin/behat ---> runs all the featured tests
 $ vendor/bin/behat features/test.feature
 ```
 # Login test with Behat in Symfony. Using `FOSUserBundle` for logging in functionality.
+* After installing `FOSUserBundle`, create a new user:
+```
+project$ php bin/console fos:user:create user user@gmail.com user
+```
 * Make symfony redirect to the profile page, after a successfull login attempt
 ```
 # app/config/security.yml:
@@ -67,8 +71,8 @@ security:
 ```
 # features/web/authentication.feature
 Feature: Authentication
-  In order to gain access to the site management area
-  As an admin
+  In order to gain access to the site
+  As a regular user
   I need to be able to login and logout
 
   Scenario: Logging in
