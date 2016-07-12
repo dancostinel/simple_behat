@@ -49,7 +49,7 @@ Feature: test behat
 ```
 $ vendor/bin/behat ---> runs all the featured tests
 ```
-8 To run a specific test
+* To run a specific test
 ```
 $ vendor/bin/behat features/test.feature
 ```
