@@ -58,7 +58,7 @@ $ vendor/bin/behat features/test.feature
 ```
 project$ php bin/console fos:user:create user user@gmail.com user
 ```
-* Make symfony redirect to the profile page, after a successfull login attempt. The default behaviour of symfony is to redirect to homepage after a successfull login
+* Make symfony redirect to the profile page, after a successfull login attempt. The default behaviour of symfony is to redirect to homepage after a successfull login, and the test will try to find the text "Logged in as user" in homepage, and we neet to search for it in `profile` page.
 ```
 # app/config/security.yml:
 security:
