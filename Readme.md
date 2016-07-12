@@ -54,4 +54,7 @@ AppBundle\Entity\Person:
             column: Age
             unique: false
 ```
-* # php bin/console doctrine:schema:update --force
+* # Create table schema
+```
+php bin/console doctrine:schema:update --force
+```
