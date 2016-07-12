@@ -13,7 +13,7 @@ project$ composer require --dev behat/mink
 project$ composer require --dev behat/mink-extension
 project$ composer require --dev behat/mink-browserkit-driver
 ```
-Or you can put them in a composer.json file, and require them all in once, using `composer install`.
+Or you can put them in a `composer.json` file, and require them all in once, using `composer install`.
 
 * Create `features/` directory
 ```
